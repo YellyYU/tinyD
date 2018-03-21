@@ -1,0 +1,360 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DPRINTK	xenbus_probe.c	35;"	d	file:
+DPRINTK	xenbus_probe_backend.c	36;"	d	file:
+DPRINTK	xenbus_probe_frontend.c	3;"	d	file:
+PRINTF_BUFFER_SIZE	xenbus_client.c	279;"	d	file:
+XENBUS_MAX_RING_PAGES	xenbus_client.c	54;"	d	file:
+XENBUS_PAGES	xenbus_client.c	52;"	d	file:
+XEN_BUS_ID_SIZE	xenbus_probe.h	37;"	d
+XS_HVM	xenbus_probe.h	/^	XS_HVM,$/;"	e	enum:xenstore_init
+XS_LOCAL	xenbus_probe.h	/^	XS_LOCAL,$/;"	e	enum:xenstore_init
+XS_PV	xenbus_probe.h	/^	XS_PV,$/;"	e	enum:xenstore_init
+XS_UNKNOWN	xenbus_probe.h	/^	XS_UNKNOWN,$/;"	e	enum:xenstore_init
+_XENBUS_COMMS_H	xenbus_comms.h	32;"	d
+_XENBUS_PROBE_H	xenbus_probe.h	35;"	d
+__read_mostly	xenbus_client.c	/^static const struct xenbus_ring_ops *ring_ops __read_mostly;$/;"	v	typeref:struct:ring_ops	file:
+__xenbus_map_ring	xenbus_client.c	/^static int __xenbus_map_ring(struct xenbus_device *dev,$/;"	f	file:
+__xenbus_register_backend	xenbus_probe_backend.c	/^EXPORT_SYMBOL_GPL(__xenbus_register_backend);$/;"	v
+__xenbus_register_backend	xenbus_probe_backend.c	/^int __xenbus_register_backend(struct xenbus_driver *drv, struct module *owner,$/;"	f
+__xenbus_register_frontend	xenbus_probe_frontend.c	/^EXPORT_SYMBOL_GPL(__xenbus_register_frontend);$/;"	v
+__xenbus_register_frontend	xenbus_probe_frontend.c	/^int __xenbus_register_frontend(struct xenbus_driver *drv, struct module *owner,$/;"	f
+__xenbus_switch_state	xenbus_client.c	/^__xenbus_switch_state(struct xenbus_device *dev,$/;"	f	file:
+addr	xenbus_client.c	/^			void *addr;$/;"	m	struct:xenbus_map_node::__anon2::__anon4	file:
+addrs	xenbus_client.c	/^			unsigned long addrs[XENBUS_MAX_RING_GRANTS];$/;"	m	struct:xenbus_map_node::__anon2::__anon4	file:
+addrs	xenbus_client.c	/^	unsigned long addrs[XENBUS_MAX_RING_GRANTS];$/;"	m	struct:map_ring_valloc_hvm	file:
+addrs	xenbus_client.c	/^	unsigned long addrs[XENBUS_MAX_RING_GRANTS];$/;"	m	struct:unmap_ring_vfree_hvm	file:
+alloc_watch_adapter	xenbus_dev_frontend.c	/^static struct watch_adapter *alloc_watch_adapter(const char *path,$/;"	f	file:
+area	xenbus_client.c	/^			struct vm_struct *area;$/;"	m	struct:xenbus_map_node::__anon2::__anon3	typeref:struct:xenbus_map_node::__anon2::__anon3::vm_struct	file:
+backend_bus_id	xenbus_probe_backend.c	/^static int backend_bus_id(char bus_id[XEN_BUS_ID_SIZE], const char *nodename)$/;"	f	file:
+backend_changed	xenbus_probe_backend.c	/^static void backend_changed(struct xenbus_watch *watch,$/;"	f	file:
+backend_changed	xenbus_probe_frontend.c	/^static void backend_changed(struct xenbus_watch *watch,$/;"	f	file:
+backend_probe_and_watch	xenbus_probe_backend.c	/^static int backend_probe_and_watch(struct notifier_block *notifier,$/;"	f	file:
+backend_state	xenbus_probe_frontend.c	/^static int backend_state;$/;"	v	file:
+be_watch	xenbus_probe_backend.c	/^static struct xenbus_watch be_watch = {$/;"	v	typeref:struct:xenbus_watch	file:
+body	xenbus_xs.c	/^			char *body;$/;"	m	struct:xs_stored_msg::__anon5::__anon6	file:
+boot_wait_for_devices	xenbus_probe_frontend.c	/^late_initcall(boot_wait_for_devices);$/;"	v
+boot_wait_for_devices	xenbus_probe_frontend.c	/^static int __init boot_wait_for_devices(void)$/;"	f	file:
+buffer	xenbus_dev_frontend.c	/^		char buffer[XENSTORE_PAYLOAD_MAX];$/;"	m	union:xenbus_file_priv::__anon1	file:
+bus	xenbus_probe.h	/^	struct bus_type bus;$/;"	m	struct:xen_bus_type	typeref:struct:xen_bus_type::bus_type
+char_count	xenbus_probe.c	/^static unsigned int char_count(const char *str, char c)$/;"	f	file:
+check_indexes	xenbus_comms.c	/^static int check_indexes(XENSTORE_RING_IDX cons, XENSTORE_RING_IDX prod)$/;"	f	file:
+cleanup_dev	xenbus_probe.c	/^static int cleanup_dev(struct device *dev, void *data)$/;"	f	file:
+cmp_dev	xenbus_probe.c	/^static int cmp_dev(struct device *dev, void *data)$/;"	f	file:
+cons	xenbus_dev_frontend.c	/^	unsigned int cons;$/;"	m	struct:read_buffer	file:
+count_strings	xenbus_xs.c	/^static unsigned int count_strings(const char *strings, unsigned int len)$/;"	f	file:
+dev	xenbus_probe.c	/^	struct xenbus_device *dev;$/;"	m	struct:xb_find_info	typeref:struct:xb_find_info::xenbus_device	file:
+dev_data	xenbus_dev_frontend.c	/^	struct xenbus_file_priv *dev_data;$/;"	m	struct:watch_adapter	typeref:struct:watch_adapter::xenbus_file_priv	file:
+devtype_show	xenbus_probe.c	/^static ssize_t devtype_show(struct device *dev,$/;"	f	file:
+error_path	xenbus_client.c	/^static char *error_path(struct xenbus_device *dev)$/;"	f	file:
+essential_device_connecting	xenbus_probe_frontend.c	/^static int essential_device_connecting(struct device *dev, void *data)$/;"	f	file:
+exists_essential_connecting_device	xenbus_probe_frontend.c	/^static int exists_essential_connecting_device(struct device_driver *drv)$/;"	f	file:
+exists_non_essential_connecting_device	xenbus_probe_frontend.c	/^static int exists_non_essential_connecting_device(struct device_driver *drv)$/;"	f	file:
+fe_watch	xenbus_probe_frontend.c	/^static struct xenbus_watch fe_watch = {$/;"	v	typeref:struct:xenbus_watch	file:
+find_watch	xenbus_xs.c	/^static struct xenbus_watch *find_watch(const char *token)$/;"	f	file:
+free_otherend_details	xenbus_probe.c	/^static void free_otherend_details(struct xenbus_device *dev)$/;"	f	file:
+free_otherend_watch	xenbus_probe.c	/^static void free_otherend_watch(struct xenbus_device *dev)$/;"	f	file:
+free_watch_adapter	xenbus_dev_frontend.c	/^static void free_watch_adapter(struct watch_adapter *watch)$/;"	f	file:
+frontend_bus_id	xenbus_probe_frontend.c	/^static int frontend_bus_id(char bus_id[XEN_BUS_ID_SIZE], const char *nodename)$/;"	f	file:
+frontend_changed	xenbus_probe_backend.c	/^static void frontend_changed(struct xenbus_watch *watch,$/;"	f	file:
+frontend_changed	xenbus_probe_frontend.c	/^static void frontend_changed(struct xenbus_watch *watch,$/;"	f	file:
+frontend_probe_and_watch	xenbus_probe_frontend.c	/^static int frontend_probe_and_watch(struct notifier_block *notifier,$/;"	f	file:
+get_bus_id	xenbus_probe.h	/^	int (*get_bus_id)(char bus_id[XEN_BUS_ID_SIZE], const char *nodename);$/;"	m	struct:xen_bus_type
+get_error	xenbus_xs.c	/^static int get_error(const char *errorstring)$/;"	f	file:
+get_input_chunk	xenbus_comms.c	/^static const void *get_input_chunk(XENSTORE_RING_IDX cons,$/;"	f	file:
+get_output_chunk	xenbus_comms.c	/^static void *get_output_chunk(XENSTORE_RING_IDX cons,$/;"	f	file:
+handle	xenbus_dev_frontend.c	/^	struct xenbus_transaction handle;$/;"	m	struct:xenbus_transaction_holder	typeref:struct:xenbus_transaction_holder::xenbus_transaction	file:
+handle	xenbus_xs.c	/^			struct xenbus_watch *handle;$/;"	m	struct:xs_stored_msg::__anon5::__anon7	typeref:struct:xs_stored_msg::__anon5::__anon7::xenbus_watch	file:
+handles	xenbus_client.c	/^	grant_handle_t handles[XENBUS_MAX_RING_GRANTS];$/;"	m	struct:xenbus_map_node	file:
+hdr	xenbus_xs.c	/^	struct xsd_sockmsg hdr;$/;"	m	struct:xs_stored_msg	typeref:struct:xs_stored_msg::xsd_sockmsg	file:
+hvm	xenbus_client.c	/^		} hvm;$/;"	m	union:xenbus_map_node::__anon2	typeref:struct:xenbus_map_node::__anon2::__anon4	file:
+idx	xenbus_client.c	/^	unsigned int idx;$/;"	m	struct:map_ring_valloc_hvm	file:
+idx	xenbus_client.c	/^	unsigned int idx;$/;"	m	struct:unmap_ring_vfree_hvm	file:
+is_device_connecting	xenbus_probe_frontend.c	/^static int is_device_connecting(struct device *dev, void *data, bool ignore_nonessential)$/;"	f	file:
+join	xenbus_xs.c	/^static char *join(const char *dir, const char *name)$/;"	f	file:
+len	xenbus_dev_frontend.c	/^	unsigned int len;$/;"	m	struct:read_buffer	file:
+len	xenbus_dev_frontend.c	/^	unsigned int len;$/;"	m	struct:xenbus_file_priv	file:
+levels	xenbus_probe.h	/^	unsigned int levels;$/;"	m	struct:xen_bus_type
+list	xenbus_dev_frontend.c	/^	struct list_head list;$/;"	m	struct:read_buffer	typeref:struct:read_buffer::list_head	file:
+list	xenbus_dev_frontend.c	/^	struct list_head list;$/;"	m	struct:watch_adapter	typeref:struct:watch_adapter::list_head	file:
+list	xenbus_dev_frontend.c	/^	struct list_head list;$/;"	m	struct:xenbus_transaction_holder	typeref:struct:xenbus_transaction_holder::list_head	file:
+list	xenbus_xs.c	/^	struct list_head list;$/;"	m	struct:xs_stored_msg	typeref:struct:xs_stored_msg::list_head	file:
+map	xenbus_client.c	/^	int (*map)(struct xenbus_device *dev,$/;"	m	struct:xenbus_ring_ops	file:
+map_ring_valloc_hvm	xenbus_client.c	/^struct map_ring_valloc_hvm$/;"	s	file:
+match_device	xenbus_probe.c	/^match_device(const struct xenbus_device_id *arr, struct xenbus_device *dev)$/;"	f	file:
+modalias_show	xenbus_probe.c	/^static ssize_t modalias_show(struct device *dev,$/;"	f	file:
+msg	xenbus_dev_frontend.c	/^		struct xsd_sockmsg msg;$/;"	m	union:xenbus_file_priv::__anon1	typeref:struct:xenbus_file_priv::__anon1::xsd_sockmsg	file:
+msg	xenbus_dev_frontend.c	/^	char msg[];$/;"	m	struct:read_buffer	file:
+msgbuffer_mutex	xenbus_dev_frontend.c	/^	struct mutex msgbuffer_mutex;$/;"	m	struct:xenbus_file_priv	typeref:struct:xenbus_file_priv::mutex	file:
+next	xenbus_client.c	/^	struct list_head next;$/;"	m	struct:xenbus_map_node	typeref:struct:xenbus_map_node::list_head	file:
+nodename	xenbus_probe.c	/^	const char *nodename;$/;"	m	struct:xb_find_info	file:
+nodename_show	xenbus_probe.c	/^static ssize_t nodename_show(struct device *dev,$/;"	f	file:
+non_essential_device_connecting	xenbus_probe_frontend.c	/^static int non_essential_device_connecting(struct device *dev, void *data)$/;"	f	file:
+nr_handles	xenbus_client.c	/^	unsigned int   nr_handles;$/;"	m	struct:xenbus_map_node	file:
+otherend_changed	xenbus_probe.h	/^	void (*otherend_changed)(struct xenbus_watch *watch, const char **vec,$/;"	m	struct:xen_bus_type
+pages	xenbus_client.c	/^			struct page *pages[XENBUS_MAX_RING_PAGES];$/;"	m	struct:xenbus_map_node::__anon2::__anon4	typeref:struct:xenbus_map_node::__anon2::__anon4::page	file:
+phys_addrs	xenbus_client.c	/^	phys_addr_t phys_addrs[XENBUS_MAX_RING_GRANTS];$/;"	m	struct:map_ring_valloc_hvm	file:
+pr_fmt	xenbus_comms.c	33;"	d	file:
+pr_fmt	xenbus_dev_backend.c	1;"	d	file:
+pr_fmt	xenbus_dev_frontend.c	38;"	d	file:
+pr_fmt	xenbus_probe.c	33;"	d	file:
+pr_fmt	xenbus_probe_backend.c	34;"	d	file:
+pr_fmt	xenbus_probe_frontend.c	1;"	d	file:
+pr_fmt	xenbus_xs.c	34;"	d	file:
+print_device_status	xenbus_probe_frontend.c	/^static int print_device_status(struct device *dev, void *data)$/;"	f	file:
+probe	xenbus_probe.h	/^	int (*probe)(struct xen_bus_type *bus, const char *type,$/;"	m	struct:xen_bus_type
+process_msg	xenbus_xs.c	/^static int process_msg(void)$/;"	f	file:
+pv	xenbus_client.c	/^		} pv;$/;"	m	union:xenbus_map_node::__anon2	typeref:struct:xenbus_map_node::__anon2::__anon3	file:
+queue_cleanup	xenbus_dev_frontend.c	/^static void queue_cleanup(struct list_head *list)$/;"	f	file:
+queue_reply	xenbus_dev_frontend.c	/^static int queue_reply(struct list_head *queue, const void *data, size_t len)$/;"	f	file:
+read_backend_details	xenbus_probe_frontend.c	/^static int read_backend_details(struct xenbus_device *xendev)$/;"	f	file:
+read_buffer	xenbus_dev_frontend.c	/^struct read_buffer {$/;"	s	file:
+read_buffers	xenbus_dev_frontend.c	/^	struct list_head read_buffers;$/;"	m	struct:xenbus_file_priv	typeref:struct:xenbus_file_priv::list_head	file:
+read_frontend_details	xenbus_probe_backend.c	/^static int read_frontend_details(struct xenbus_device *xendev)$/;"	f	file:
+read_reply	xenbus_xs.c	/^static void *read_reply(enum xsd_sockmsg_type *type, unsigned int *len)$/;"	f	file:
+read_waitq	xenbus_dev_frontend.c	/^	wait_queue_head_t read_waitq;$/;"	m	struct:xenbus_file_priv	file:
+ready_to_wait_for_devices	xenbus_probe_frontend.c	/^static int ready_to_wait_for_devices;$/;"	v	file:
+register_xenbus_watch	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(register_xenbus_watch);$/;"	v
+register_xenbus_watch	xenbus_xs.c	/^int register_xenbus_watch(struct xenbus_watch *watch)$/;"	f
+register_xenstore_notifier	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(register_xenstore_notifier);$/;"	v
+register_xenstore_notifier	xenbus_probe.c	/^int register_xenstore_notifier(struct notifier_block *nb)$/;"	f
+reply	xenbus_xs.c	/^		} reply;$/;"	m	union:xs_stored_msg::__anon5	typeref:struct:xs_stored_msg::__anon5::__anon6	file:
+reply_list	xenbus_xs.c	/^	struct list_head reply_list;$/;"	m	struct:xs_handle	typeref:struct:xs_handle::list_head	file:
+reply_lock	xenbus_xs.c	/^	spinlock_t reply_lock;$/;"	m	struct:xs_handle	file:
+reply_mutex	xenbus_dev_frontend.c	/^	struct mutex reply_mutex;$/;"	m	struct:xenbus_file_priv	typeref:struct:xenbus_file_priv::mutex	file:
+reply_waitq	xenbus_xs.c	/^	wait_queue_head_t reply_waitq;$/;"	m	struct:xs_handle	file:
+request_mutex	xenbus_xs.c	/^	struct mutex request_mutex;$/;"	m	struct:xs_handle	typeref:struct:xs_handle::mutex	file:
+response_mutex	xenbus_xs.c	/^	struct mutex response_mutex;$/;"	m	struct:xs_handle	typeref:struct:xs_handle::mutex	file:
+ring_ops_hvm	xenbus_client.c	/^static const struct xenbus_ring_ops ring_ops_hvm = {$/;"	v	typeref:struct:xenbus_ring_ops	file:
+ring_ops_pv	xenbus_client.c	/^static const struct xenbus_ring_ops ring_ops_pv = {$/;"	v	typeref:struct:xenbus_ring_ops	file:
+root	xenbus_probe.h	/^	char *root;$/;"	m	struct:xen_bus_type
+split	xenbus_xs.c	/^static char **split(char *strings, unsigned int len, unsigned int *num)$/;"	f	file:
+strsep_len	xenbus_probe.c	/^static int strsep_len(const char *str, char c, unsigned int len)$/;"	f	file:
+talk_to_otherend	xenbus_probe.c	/^static int talk_to_otherend(struct xenbus_device *dev)$/;"	f	file:
+token	xenbus_dev_frontend.c	/^	char *token;$/;"	m	struct:watch_adapter	file:
+transaction_count	xenbus_xs.c	/^	atomic_t transaction_count;$/;"	m	struct:xs_handle	file:
+transaction_end	xenbus_xs.c	/^static void transaction_end(void)$/;"	f	file:
+transaction_mutex	xenbus_xs.c	/^	struct mutex transaction_mutex;$/;"	m	struct:xs_handle	typeref:struct:xs_handle::mutex	file:
+transaction_resume	xenbus_xs.c	/^static void transaction_resume(void)$/;"	f	file:
+transaction_start	xenbus_xs.c	/^static void transaction_start(void)$/;"	f	file:
+transaction_suspend	xenbus_xs.c	/^static void transaction_suspend(void)$/;"	f	file:
+transaction_wq	xenbus_xs.c	/^	wait_queue_head_t transaction_wq;$/;"	m	struct:xs_handle	file:
+transactions	xenbus_dev_frontend.c	/^	struct list_head transactions;$/;"	m	struct:xenbus_file_priv	typeref:struct:xenbus_file_priv::list_head	file:
+u	xenbus_dev_frontend.c	/^	} u;$/;"	m	struct:xenbus_file_priv	typeref:union:xenbus_file_priv::__anon1	file:
+u	xenbus_xs.c	/^	} u;$/;"	m	struct:xs_stored_msg	typeref:union:xs_stored_msg::__anon5	file:
+unmap	xenbus_client.c	/^	int (*unmap)(struct xenbus_device *dev, void *vaddr);$/;"	m	struct:xenbus_ring_ops	file:
+unmap_ring_vfree_hvm	xenbus_client.c	/^struct unmap_ring_vfree_hvm$/;"	s	file:
+unregister_xenbus_watch	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(unregister_xenbus_watch);$/;"	v
+unregister_xenbus_watch	xenbus_xs.c	/^void unregister_xenbus_watch(struct xenbus_watch *watch)$/;"	f
+unregister_xenstore_notifier	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(unregister_xenstore_notifier);$/;"	v
+unregister_xenstore_notifier	xenbus_probe.c	/^void unregister_xenstore_notifier(struct notifier_block *nb)$/;"	f
+vec	xenbus_xs.c	/^			char **vec;$/;"	m	struct:xs_stored_msg::__anon5::__anon7	file:
+vec_size	xenbus_xs.c	/^			unsigned int vec_size;$/;"	m	struct:xs_stored_msg::__anon5::__anon7	file:
+wait_for_devices	xenbus_probe_frontend.c	/^static void wait_for_devices(struct xenbus_driver *xendrv)$/;"	f	file:
+wait_loop	xenbus_probe_frontend.c	/^static bool wait_loop(unsigned long start, unsigned int max_delay,$/;"	f	file:
+wake_waiting	xenbus_comms.c	/^static irqreturn_t wake_waiting(int irq, void *unused)$/;"	f	file:
+watch	xenbus_dev_frontend.c	/^	struct xenbus_watch watch;$/;"	m	struct:watch_adapter	typeref:struct:watch_adapter::xenbus_watch	file:
+watch	xenbus_xs.c	/^		} watch;$/;"	m	union:xs_stored_msg::__anon5	typeref:struct:xs_stored_msg::__anon5::__anon7	file:
+watch_adapter	xenbus_dev_frontend.c	/^struct watch_adapter {$/;"	s	file:
+watch_fired	xenbus_dev_frontend.c	/^static void watch_fired(struct xenbus_watch *watch,$/;"	f	file:
+watch_mutex	xenbus_xs.c	/^	struct rw_semaphore watch_mutex;$/;"	m	struct:xs_handle	typeref:struct:xs_handle::rw_semaphore	file:
+watch_otherend	xenbus_probe.c	/^static int watch_otherend(struct xenbus_device *dev)$/;"	f	file:
+watches	xenbus_dev_frontend.c	/^	struct list_head watches;$/;"	m	struct:xenbus_file_priv	typeref:struct:xenbus_file_priv::list_head	file:
+xb_data_to_read	xenbus_comms.c	/^int xb_data_to_read(void)$/;"	f
+xb_deinit_comms	xenbus_comms.c	/^void xb_deinit_comms(void)$/;"	f
+xb_find_info	xenbus_probe.c	/^struct xb_find_info {$/;"	s	file:
+xb_init_comms	xenbus_comms.c	/^int xb_init_comms(void)$/;"	f
+xb_read	xenbus_comms.c	/^int xb_read(void *data, unsigned len)$/;"	f
+xb_wait_for_data_to_read	xenbus_comms.c	/^int xb_wait_for_data_to_read(void)$/;"	f
+xb_write	xenbus_comms.c	/^int xb_write(const void *data, unsigned len)$/;"	f
+xen_bus_type	xenbus_probe.h	/^struct xen_bus_type {$/;"	s
+xen_store_domain_type	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xen_store_domain_type);$/;"	v
+xen_store_domain_type	xenbus_probe.c	/^enum xenstore_init xen_store_domain_type;$/;"	v	typeref:enum:xenstore_init
+xen_store_evtchn	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xen_store_evtchn);$/;"	v
+xen_store_evtchn	xenbus_probe.c	/^int xen_store_evtchn;$/;"	v
+xen_store_gfn	xenbus_probe.c	/^static unsigned long xen_store_gfn;$/;"	v	file:
+xen_store_interface	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xen_store_interface);$/;"	v
+xen_store_interface	xenbus_probe.c	/^struct xenstore_domain_interface *xen_store_interface;$/;"	v	typeref:struct:xenstore_domain_interface
+xen_strict_xenbus_quirk	xenbus_xs.c	/^static bool xen_strict_xenbus_quirk(void)$/;"	f	file:
+xen_xenbus_fops	xenbus_dev_frontend.c	/^EXPORT_SYMBOL_GPL(xen_xenbus_fops);$/;"	v
+xen_xenbus_fops	xenbus_dev_frontend.c	/^const struct file_operations xen_xenbus_fops = {$/;"	v	typeref:struct:file_operations
+xenbus-objs	Makefile	/^xenbus-objs =$/;"	m
+xenbus_alloc	xenbus_dev_backend.c	/^static long xenbus_alloc(domid_t domid)$/;"	f	file:
+xenbus_alloc_evtchn	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_alloc_evtchn);$/;"	v
+xenbus_alloc_evtchn	xenbus_client.c	/^int xenbus_alloc_evtchn(struct xenbus_device *dev, int *port)$/;"	f
+xenbus_backend	xenbus_probe_backend.c	/^static struct xen_bus_type xenbus_backend = {$/;"	v	typeref:struct:xen_bus_type	file:
+xenbus_backend_dev	xenbus_dev_backend.c	/^static struct miscdevice xenbus_backend_dev = {$/;"	v	typeref:struct:miscdevice	file:
+xenbus_backend_fops	xenbus_dev_backend.c	/^static const struct file_operations xenbus_backend_fops = {$/;"	v	typeref:struct:file_operations	file:
+xenbus_backend_init	xenbus_dev_backend.c	/^device_initcall(xenbus_backend_init);$/;"	v
+xenbus_backend_init	xenbus_dev_backend.c	/^static int __init xenbus_backend_init(void)$/;"	f	file:
+xenbus_backend_ioctl	xenbus_dev_backend.c	/^static long xenbus_backend_ioctl(struct file *file, unsigned int cmd,$/;"	f	file:
+xenbus_backend_mmap	xenbus_dev_backend.c	/^static int xenbus_backend_mmap(struct file *file, struct vm_area_struct *vma)$/;"	f	file:
+xenbus_backend_open	xenbus_dev_backend.c	/^static int xenbus_backend_open(struct inode *inode, struct file *filp)$/;"	f	file:
+xenbus_check_frontend	xenbus_probe_frontend.c	/^static void xenbus_check_frontend(char *class, char *dev)$/;"	f	file:
+xenbus_cleanup_devices	xenbus_probe.c	/^static void xenbus_cleanup_devices(const char *path, struct bus_type *bus)$/;"	f	file:
+xenbus_command_reply	xenbus_dev_frontend.c	/^static int xenbus_command_reply(struct xenbus_file_priv *u,$/;"	f	file:
+xenbus_dev	xenbus_dev_frontend.c	/^static struct miscdevice xenbus_dev = {$/;"	v	typeref:struct:miscdevice	file:
+xenbus_dev_attrs	xenbus_probe.c	/^static struct attribute *xenbus_dev_attrs[] = {$/;"	v	typeref:struct:attribute	file:
+xenbus_dev_cancel	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_cancel);$/;"	v
+xenbus_dev_cancel	xenbus_probe.c	/^int xenbus_dev_cancel(struct device *dev)$/;"	f
+xenbus_dev_changed	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_changed);$/;"	v
+xenbus_dev_changed	xenbus_probe.c	/^void xenbus_dev_changed(const char *node, struct xen_bus_type *bus)$/;"	f
+xenbus_dev_error	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_error);$/;"	v
+xenbus_dev_error	xenbus_client.c	/^void xenbus_dev_error(struct xenbus_device *dev, int err, const char *fmt, ...)$/;"	f
+xenbus_dev_fatal	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_fatal);$/;"	v
+xenbus_dev_fatal	xenbus_client.c	/^void xenbus_dev_fatal(struct xenbus_device *dev, int err, const char *fmt, ...)$/;"	f
+xenbus_dev_group	xenbus_probe.c	/^static const struct attribute_group xenbus_dev_group = {$/;"	v	typeref:struct:attribute_group	file:
+xenbus_dev_groups	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_groups);$/;"	v
+xenbus_dev_groups	xenbus_probe.c	/^const struct attribute_group *xenbus_dev_groups[] = {$/;"	v	typeref:struct:attribute_group
+xenbus_dev_is_online	xenbus_probe_backend.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_is_online);$/;"	v
+xenbus_dev_is_online	xenbus_probe_backend.c	/^int xenbus_dev_is_online(struct xenbus_device *dev)$/;"	f
+xenbus_dev_probe	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_probe);$/;"	v
+xenbus_dev_probe	xenbus_probe.c	/^int xenbus_dev_probe(struct device *_dev)$/;"	f
+xenbus_dev_release	xenbus_probe.c	/^static void xenbus_dev_release(struct device *dev)$/;"	f	file:
+xenbus_dev_remove	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_remove);$/;"	v
+xenbus_dev_remove	xenbus_probe.c	/^int xenbus_dev_remove(struct device *_dev)$/;"	f
+xenbus_dev_request_and_reply	xenbus_xs.c	/^EXPORT_SYMBOL(xenbus_dev_request_and_reply);$/;"	v
+xenbus_dev_request_and_reply	xenbus_xs.c	/^void *xenbus_dev_request_and_reply(struct xsd_sockmsg *msg)$/;"	f
+xenbus_dev_resume	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_resume);$/;"	v
+xenbus_dev_resume	xenbus_probe.c	/^int xenbus_dev_resume(struct device *dev)$/;"	f
+xenbus_dev_shutdown	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_shutdown);$/;"	v
+xenbus_dev_shutdown	xenbus_probe.c	/^void xenbus_dev_shutdown(struct device *_dev)$/;"	f
+xenbus_dev_suspend	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_dev_suspend);$/;"	v
+xenbus_dev_suspend	xenbus_probe.c	/^int xenbus_dev_suspend(struct device *dev)$/;"	f
+xenbus_device_find	xenbus_probe.c	/^static struct xenbus_device *xenbus_device_find(const char *nodename,$/;"	f	file:
+xenbus_directory	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_directory);$/;"	v
+xenbus_directory	xenbus_xs.c	/^char **xenbus_directory(struct xenbus_transaction t,$/;"	f
+xenbus_exists	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_exists);$/;"	v
+xenbus_exists	xenbus_xs.c	/^int xenbus_exists(struct xenbus_transaction t,$/;"	f
+xenbus_file_open	xenbus_dev_frontend.c	/^static int xenbus_file_open(struct inode *inode, struct file *filp)$/;"	f	file:
+xenbus_file_poll	xenbus_dev_frontend.c	/^static unsigned int xenbus_file_poll(struct file *file, poll_table *wait)$/;"	f	file:
+xenbus_file_priv	xenbus_dev_frontend.c	/^struct xenbus_file_priv {$/;"	s	file:
+xenbus_file_read	xenbus_dev_frontend.c	/^static ssize_t xenbus_file_read(struct file *filp,$/;"	f	file:
+xenbus_file_release	xenbus_dev_frontend.c	/^static int xenbus_file_release(struct inode *inode, struct file *filp)$/;"	f	file:
+xenbus_file_write	xenbus_dev_frontend.c	/^static ssize_t xenbus_file_write(struct file *filp,$/;"	f	file:
+xenbus_free_evtchn	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_free_evtchn);$/;"	v
+xenbus_free_evtchn	xenbus_client.c	/^int xenbus_free_evtchn(struct xenbus_device *dev, int port)$/;"	f
+xenbus_frontend	xenbus_probe_frontend.c	/^static struct xen_bus_type xenbus_frontend = {$/;"	v	typeref:struct:xen_bus_type	file:
+xenbus_frontend_closed	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_frontend_closed);$/;"	v
+xenbus_frontend_closed	xenbus_client.c	/^int xenbus_frontend_closed(struct xenbus_device *dev)$/;"	f
+xenbus_frontend_delayed_resume	xenbus_probe_frontend.c	/^static void xenbus_frontend_delayed_resume(struct work_struct *w)$/;"	f	file:
+xenbus_frontend_dev_probe	xenbus_probe_frontend.c	/^static int xenbus_frontend_dev_probe(struct device *dev)$/;"	f	file:
+xenbus_frontend_dev_resume	xenbus_probe_frontend.c	/^static int xenbus_frontend_dev_resume(struct device *dev)$/;"	f	file:
+xenbus_gather	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_gather);$/;"	v
+xenbus_gather	xenbus_xs.c	/^int xenbus_gather(struct xenbus_transaction t, const char *dir, ...)$/;"	f
+xenbus_grant_ring	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_grant_ring);$/;"	v
+xenbus_grant_ring	xenbus_client.c	/^int xenbus_grant_ring(struct xenbus_device *dev, void *vaddr,$/;"	f
+xenbus_init	xenbus_dev_frontend.c	/^device_initcall(xenbus_init);$/;"	v
+xenbus_init	xenbus_dev_frontend.c	/^static int __init xenbus_init(void)$/;"	f	file:
+xenbus_init	xenbus_probe.c	/^postcore_initcall(xenbus_init);$/;"	v
+xenbus_init	xenbus_probe.c	/^static int __init xenbus_init(void)$/;"	f	file:
+xenbus_irq	xenbus_comms.c	/^static int xenbus_irq;$/;"	v	file:
+xenbus_map_node	xenbus_client.c	/^struct xenbus_map_node {$/;"	s	file:
+xenbus_map_ring	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_map_ring);$/;"	v
+xenbus_map_ring	xenbus_client.c	/^int xenbus_map_ring(struct xenbus_device *dev, grant_ref_t *gnt_refs,$/;"	f
+xenbus_map_ring_setup_grant_hvm	xenbus_client.c	/^static void xenbus_map_ring_setup_grant_hvm(unsigned long gfn,$/;"	f	file:
+xenbus_map_ring_valloc	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_map_ring_valloc);$/;"	v
+xenbus_map_ring_valloc	xenbus_client.c	/^int xenbus_map_ring_valloc(struct xenbus_device *dev, grant_ref_t *gnt_refs,$/;"	f
+xenbus_map_ring_valloc_hvm	xenbus_client.c	/^static int xenbus_map_ring_valloc_hvm(struct xenbus_device *dev,$/;"	f	file:
+xenbus_map_ring_valloc_pv	xenbus_client.c	/^static int xenbus_map_ring_valloc_pv(struct xenbus_device *dev,$/;"	f	file:
+xenbus_match	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_match);$/;"	v
+xenbus_match	xenbus_probe.c	/^int xenbus_match(struct device *_dev, struct device_driver *_drv)$/;"	f
+xenbus_mkdir	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_mkdir);$/;"	v
+xenbus_mkdir	xenbus_xs.c	/^int xenbus_mkdir(struct xenbus_transaction t,$/;"	f
+xenbus_ok	xenbus_xs.c	/^static bool xenbus_ok(void)$/;"	f	file:
+xenbus_otherend_changed	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_otherend_changed);$/;"	v
+xenbus_otherend_changed	xenbus_probe.c	/^void xenbus_otherend_changed(struct xenbus_watch *watch,$/;"	f
+xenbus_pm_ops	xenbus_probe_frontend.c	/^static const struct dev_pm_ops xenbus_pm_ops = {$/;"	v	typeref:struct:dev_pm_ops	file:
+xenbus_printf	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_printf);$/;"	v
+xenbus_printf	xenbus_xs.c	/^int xenbus_printf(struct xenbus_transaction t,$/;"	f
+xenbus_probe	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_probe);$/;"	v
+xenbus_probe	xenbus_probe.c	/^void xenbus_probe(struct work_struct *unused)$/;"	f
+xenbus_probe_backend	xenbus_probe_backend.c	/^static int xenbus_probe_backend(struct xen_bus_type *bus, const char *type,$/;"	f	file:
+xenbus_probe_backend_init	xenbus_probe_backend.c	/^static int __init xenbus_probe_backend_init(void)$/;"	f	file:
+xenbus_probe_backend_init	xenbus_probe_backend.c	/^subsys_initcall(xenbus_probe_backend_init);$/;"	v
+xenbus_probe_backend_unit	xenbus_probe_backend.c	/^static int xenbus_probe_backend_unit(struct xen_bus_type *bus,$/;"	f	file:
+xenbus_probe_device_type	xenbus_probe.c	/^static int xenbus_probe_device_type(struct xen_bus_type *bus, const char *type)$/;"	f	file:
+xenbus_probe_devices	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_probe_devices);$/;"	v
+xenbus_probe_devices	xenbus_probe.c	/^int xenbus_probe_devices(struct xen_bus_type *bus)$/;"	f
+xenbus_probe_frontend	xenbus_probe_frontend.c	/^static int xenbus_probe_frontend(struct xen_bus_type *bus, const char *type,$/;"	f	file:
+xenbus_probe_frontend_init	xenbus_probe_frontend.c	/^static int __init xenbus_probe_frontend_init(void)$/;"	f	file:
+xenbus_probe_frontend_init	xenbus_probe_frontend.c	/^subsys_initcall(xenbus_probe_frontend_init);$/;"	v
+xenbus_probe_initcall	xenbus_probe.c	/^device_initcall(xenbus_probe_initcall);$/;"	v
+xenbus_probe_initcall	xenbus_probe.c	/^static int __init xenbus_probe_initcall(void)$/;"	f	file:
+xenbus_probe_node	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_probe_node);$/;"	v
+xenbus_probe_node	xenbus_probe.c	/^int xenbus_probe_node(struct xen_bus_type *bus,$/;"	f
+xenbus_read	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_read);$/;"	v
+xenbus_read	xenbus_xs.c	/^void *xenbus_read(struct xenbus_transaction t,$/;"	f
+xenbus_read_driver_state	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_read_driver_state);$/;"	v
+xenbus_read_driver_state	xenbus_client.c	/^enum xenbus_state xenbus_read_driver_state(const char *path)$/;"	f
+xenbus_read_otherend_details	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_read_otherend_details);$/;"	v
+xenbus_read_otherend_details	xenbus_probe.c	/^int xenbus_read_otherend_details(struct xenbus_device *xendev,$/;"	f
+xenbus_read_unsigned	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_read_unsigned);$/;"	v
+xenbus_read_unsigned	xenbus_xs.c	/^unsigned int xenbus_read_unsigned(const char *dir, const char *node,$/;"	f
+xenbus_register_driver_common	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_register_driver_common);$/;"	v
+xenbus_register_driver_common	xenbus_probe.c	/^int xenbus_register_driver_common(struct xenbus_driver *drv,$/;"	f
+xenbus_reset_backend_state_changed	xenbus_probe_frontend.c	/^static void xenbus_reset_backend_state_changed(struct xenbus_watch *w,$/;"	f	file:
+xenbus_reset_frontend	xenbus_probe_frontend.c	/^static void xenbus_reset_frontend(char *fe, char *be, int be_state)$/;"	f	file:
+xenbus_reset_state	xenbus_probe_frontend.c	/^static void xenbus_reset_state(void)$/;"	f	file:
+xenbus_reset_wait_for_backend	xenbus_probe_frontend.c	/^static void xenbus_reset_wait_for_backend(char *be, int expected)$/;"	f	file:
+xenbus_resume_cb	xenbus_probe.c	/^static int xenbus_resume_cb(struct notifier_block *nb,$/;"	f	file:
+xenbus_resume_nb	xenbus_probe.c	/^static struct notifier_block xenbus_resume_nb = {$/;"	v	typeref:struct:notifier_block	file:
+xenbus_ring_ops	xenbus_client.c	/^struct xenbus_ring_ops {$/;"	s	file:
+xenbus_ring_ops_init	xenbus_client.c	/^void __init xenbus_ring_ops_init(void)$/;"	f
+xenbus_rm	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_rm);$/;"	v
+xenbus_rm	xenbus_xs.c	/^int xenbus_rm(struct xenbus_transaction t, const char *dir, const char *node)$/;"	f
+xenbus_scanf	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_scanf);$/;"	v
+xenbus_scanf	xenbus_xs.c	/^int xenbus_scanf(struct xenbus_transaction t,$/;"	f
+xenbus_strstate	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_strstate);$/;"	v
+xenbus_strstate	xenbus_client.c	/^const char *xenbus_strstate(enum xenbus_state state)$/;"	f
+xenbus_switch_fatal	xenbus_client.c	/^static void xenbus_switch_fatal(struct xenbus_device *dev, int depth, int err,$/;"	f	file:
+xenbus_switch_state	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_switch_state);$/;"	v
+xenbus_switch_state	xenbus_client.c	/^int xenbus_switch_state(struct xenbus_device *dev, enum xenbus_state state)$/;"	f
+xenbus_thread	xenbus_xs.c	/^static int xenbus_thread(void *unused)$/;"	f	file:
+xenbus_transaction_end	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_transaction_end);$/;"	v
+xenbus_transaction_end	xenbus_xs.c	/^int xenbus_transaction_end(struct xenbus_transaction t, int abort)$/;"	f
+xenbus_transaction_holder	xenbus_dev_frontend.c	/^struct xenbus_transaction_holder {$/;"	s	file:
+xenbus_transaction_start	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_transaction_start);$/;"	v
+xenbus_transaction_start	xenbus_xs.c	/^int xenbus_transaction_start(struct xenbus_transaction *t)$/;"	f
+xenbus_uevent_backend	xenbus_probe_backend.c	/^static int xenbus_uevent_backend(struct device *dev,$/;"	f	file:
+xenbus_uevent_frontend	xenbus_probe_frontend.c	/^static int xenbus_uevent_frontend(struct device *_dev,$/;"	f	file:
+xenbus_unmap_ring	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_unmap_ring);$/;"	v
+xenbus_unmap_ring	xenbus_client.c	/^int xenbus_unmap_ring(struct xenbus_device *dev,$/;"	f
+xenbus_unmap_ring_setup_grant_hvm	xenbus_client.c	/^static void xenbus_unmap_ring_setup_grant_hvm(unsigned long gfn,$/;"	f	file:
+xenbus_unmap_ring_vfree	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_unmap_ring_vfree);$/;"	v
+xenbus_unmap_ring_vfree	xenbus_client.c	/^int xenbus_unmap_ring_vfree(struct xenbus_device *dev, void *vaddr)$/;"	f
+xenbus_unmap_ring_vfree_hvm	xenbus_client.c	/^static int xenbus_unmap_ring_vfree_hvm(struct xenbus_device *dev, void *vaddr)$/;"	f	file:
+xenbus_unmap_ring_vfree_pv	xenbus_client.c	/^static int xenbus_unmap_ring_vfree_pv(struct xenbus_device *dev, void *vaddr)$/;"	f	file:
+xenbus_unregister_driver	xenbus_probe.c	/^EXPORT_SYMBOL_GPL(xenbus_unregister_driver);$/;"	v
+xenbus_unregister_driver	xenbus_probe.c	/^void xenbus_unregister_driver(struct xenbus_driver *drv)$/;"	f
+xenbus_va_dev_error	xenbus_client.c	/^static void xenbus_va_dev_error(struct xenbus_device *dev, int err,$/;"	f	file:
+xenbus_watch_path	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_watch_path);$/;"	v
+xenbus_watch_path	xenbus_client.c	/^int xenbus_watch_path(struct xenbus_device *dev, const char *path,$/;"	f
+xenbus_watch_pathfmt	xenbus_client.c	/^EXPORT_SYMBOL_GPL(xenbus_watch_pathfmt);$/;"	v
+xenbus_watch_pathfmt	xenbus_client.c	/^int xenbus_watch_pathfmt(struct xenbus_device *dev,$/;"	f
+xenbus_write	xenbus_xs.c	/^EXPORT_SYMBOL_GPL(xenbus_write);$/;"	v
+xenbus_write	xenbus_xs.c	/^int xenbus_write(struct xenbus_transaction t,$/;"	f
+xenbus_write_transaction	xenbus_dev_frontend.c	/^static int xenbus_write_transaction(unsigned msg_type,$/;"	f	file:
+xenbus_write_watch	xenbus_dev_frontend.c	/^static int xenbus_write_watch(unsigned msg_type, struct xenbus_file_priv *u)$/;"	f	file:
+xenstore_init	xenbus_probe.h	/^enum xenstore_init {$/;"	g
+xenstored_local_init	xenbus_probe.c	/^static int __init xenstored_local_init(void)$/;"	f	file:
+xenstored_ready	xenbus_probe.c	/^int xenstored_ready;$/;"	v
+xenwatch_pid	xenbus_xs.c	/^static pid_t xenwatch_pid;$/;"	v	file:
+xenwatch_thread	xenbus_xs.c	/^static int xenwatch_thread(void *unused)$/;"	f	file:
+xs_error	xenbus_xs.c	/^static int xs_error(char *reply)$/;"	f	file:
+xs_handle	xenbus_xs.c	/^struct xs_handle {$/;"	s	file:
+xs_init	xenbus_xs.c	/^int xs_init(void)$/;"	f
+xs_reset_watches	xenbus_xs.c	/^static void xs_reset_watches(void)$/;"	f	file:
+xs_resume	xenbus_xs.c	/^void xs_resume(void)$/;"	f
+xs_single	xenbus_xs.c	/^static void *xs_single(struct xenbus_transaction t,$/;"	f	file:
+xs_state	xenbus_xs.c	/^static struct xs_handle xs_state;$/;"	v	typeref:struct:xs_handle	file:
+xs_stored_msg	xenbus_xs.c	/^struct xs_stored_msg {$/;"	s	file:
+xs_suspend	xenbus_xs.c	/^void xs_suspend(void)$/;"	f
+xs_suspend_cancel	xenbus_xs.c	/^void xs_suspend_cancel(void)$/;"	f
+xs_talkv	xenbus_xs.c	/^static void *xs_talkv(struct xenbus_transaction t,$/;"	f	file:
+xs_unwatch	xenbus_xs.c	/^static int xs_unwatch(const char *path, const char *token)$/;"	f	file:
+xs_watch	xenbus_xs.c	/^static int xs_watch(const char *path, const char *token)$/;"	f	file:

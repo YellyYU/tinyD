@@ -1,0 +1,46 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devtmpfs none /dev
+
+echo -e "\nBoot took $(cut -d' ' -f1 /proc/uptime) seconds\n"
+
+mkdir /mnt
+mount /dev/sda /mnt
+cd /mnt
+
+#mount --move . /
+#chroot .
+#swapon /mnt/memory/swap
+#umount /
+#mount /dev/sda /
+# /init
+
+#sleep 10
+
+cat /proc/cmdline
+str=$(cat /proc/cmdline)
+echo cmdline $str > /mnt/termlog.txt
+id=${str:21:3}
+timer=${str:30:6}
+patern=${str:45:1}
+test_case=${str:52:1}
+echo id $id >> /mnt/termlog.txt
+echo test_case $test_case >> /mnt/termlog.txt
+echo pattern $pattern >> /mnt/termlog.txt
+#/sbin/mkswap /mnt/swap
+/sbin/swapon /mnt/swap >> /mnt/termlog.txt
+
+echo "init..." >> /mnt/termlog.txt
+
+/mnt/timer.sh $timer
+
+echo "timer.sh back, begin to sleep for 10 secs" >> /mnt/termlog.txt
+sleep 10
+echo "sleep end, begin to run" >> /mnt/termlog.txt
+
+/bin/sh /mnt/run_test$test_case\_p$pattern.sh > /mnt/result_$id.txt &
+
+
+exec /bin/sh
